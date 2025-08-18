@@ -12,7 +12,7 @@
 "commands": {
   "inject-leader-main": {
     "suggested_key": {
-      "default": "Ctrl+9"
+      "default": "Ctrl+8"
     },
     "description": "Leader (main)"
   },
@@ -24,7 +24,7 @@
   },
   "inject-leader-alt": {
     "suggested_key": {
-      "default": "Ctrl+Shift+9"
+      "default": "Ctrl+Shift+8"
     },
     "description": "Leader (alt)"
   },
