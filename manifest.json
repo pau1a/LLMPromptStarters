@@ -12,25 +12,25 @@
 "commands": {
   "inject-leader-main": {
     "suggested_key": {
-      "default": "Ctrl+["
+      "default": "Ctrl+9"
     },
     "description": "Leader (main)"
   },
   "inject-trailer-main": {
     "suggested_key": {
-      "default": "Ctrl+]"
+      "default": "Ctrl+9"
     },
     "description": "Trailer (main)"
   },
   "inject-leader-alt": {
     "suggested_key": {
-      "default": "Ctrl+Shift+["
+      "default": "Ctrl+Shift+9"
     },
     "description": "Leader (alt)"
   },
   "inject-trailer-alt": {
     "suggested_key": {
-      "default": "Ctrl+Shift+]"
+      "default": "Ctrl+Shift+9"
     },
     "description": "Trailer (alt)"
   }
