@@ -8,29 +8,24 @@
     "service_worker": "background.js"
   },
   "commands": {
-    "inject-leader-main": {
-      "suggested_key": {
-        "default": "Command+Option+["
-      },
-      "description": "Inject main leader"
-    },
-    "inject-trailer-main": {
-      "suggested_key": {
-        "default": "Command+Option+]"
-      },
-      "description": "Inject main trailer"
-    },
-    "inject-leader-alt": {
-      "suggested_key": {
-        "default": "Command+Option+{"
-      },
-      "description": "Inject alternate leader"
-    },
-    "inject-trailer-alt": {
-      "suggested_key": {
-        "default": "Command+Option+}"
-      },
-      "description": "Inject alternate trailer"
-    }
+
+"inject-leader-main": {
+  "suggested_key": { "default": "Ctrl+Alt+[" },
+  "description": "Inject leader (main)"
+},
+"inject-trailer-main": {
+  "suggested_key": { "default": "Ctrl+Alt+]" },
+  "description": "Inject trailer (main)"
+},
+"inject-leader-alt": {
+  "suggested_key": { "default": "Ctrl+Alt+Shift+[" },
+  "description": "Inject leader (alt)"
+},
+"inject-trailer-alt": {
+  "suggested_key": { "default": "Ctrl+Alt+Shift+]" },
+  "description": "Inject trailer (alt)"
+}
+    
+
   }
 }
