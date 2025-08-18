@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Command Manager</title>
+    <style>
+      body { font-family: sans-serif; padding: 2rem; max-width: 800px; }
+      h2 { margin-top: 2rem; }
+      textarea { width: 100%; height: 100px; margin: 0.5rem 0 1rem; }
+      button { margin-top: 1rem; }
+      #status { margin-top: 1rem; color: green; }
+    </style>
+  </head>
+  <body>
+    <h1>Manage Templates</h1>
+
+    <h2>Leader (Main) – Cmd+Opt+[</h2>
+    <textarea id="leaderMain"></textarea>
+
+    <h2>Trailer (Main) – Cmd+Opt+]</h2>
+    <textarea id="trailerMain"></textarea>
+
+    <h2>Leader (Alt) – Cmd+Opt+{</h2>
+    <textarea id="leaderAlt"></textarea>
+
+    <h2>Trailer (Alt) – Cmd+Opt+}</h2>
+    <textarea id="trailerAlt"></textarea>
+
+    <button id="save">Save All</button>
+    <p id="status"></p>
+
+    <script src="options.js"></script>
+  </body>
+</html>

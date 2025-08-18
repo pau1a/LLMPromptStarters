@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Text Injector",
+  "version": "1.0",
+  "description": "Inject pre/post prompts with main and alt hotkeys",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "inject-leader-main": {
+      "suggested_key": {
+        "default": "Command+Option+["
+      },
+      "description": "Inject main leader"
+    },
+    "inject-trailer-main": {
+      "suggested_key": {
+        "default": "Command+Option+]"
+      },
+      "description": "Inject main trailer"
+    },
+    "inject-leader-alt": {
+      "suggested_key": {
+        "default": "Command+Option+{"
+      },
+      "description": "Inject alternate leader"
+    },
+    "inject-trailer-alt": {
+      "suggested_key": {
+        "default": "Command+Option+}"
+      },
+      "description": "Inject alternate trailer"
+    }
+  }
+}
