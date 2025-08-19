@@ -6,29 +6,19 @@ const trailerAltBtn   = document.getElementById("btnTrailerAlt");
 const openOptionsLink = document.getElementById("openOptions");
 const statusEl        = document.getElementById("status");
 
-// Load all templates from storage
-let templates = {};
-chrome.storage.sync.get(["leaderMain", "trailerMain", "leaderAlt", "trailerAlt"])
-  .then((data) => {
-    templates = data;
+// Utility: fetch template + inject
+function handleClick(label, key) {
+  chrome.storage.sync.get(key).then((data) => {
+    const text = data[key];
+    injectAndNotify(label, text);
   });
+}
 
-// Event bindings
-leaderMainBtn.addEventListener("click", () => {
-  injectAndNotify("Leader (Main)", templates.leaderMain);
-});
-
-trailerMainBtn.addEventListener("click", () => {
-  injectAndNotify("Trailer (Main)", templates.trailerMain);
-});
-
-leaderAltBtn.addEventListener("click", () => {
-  injectAndNotify("Leader (Alt)", templates.leaderAlt);
-});
-
-trailerAltBtn.addEventListener("click", () => {
-  injectAndNotify("Trailer (Alt)", templates.trailerAlt);
-});
+// Bind buttons to handlers
+leaderMainBtn.addEventListener("click", () => handleClick("Leader (Main)", "leaderMain"));
+trailerMainBtn.addEventListener("click", () => handleClick("Trailer (Main)", "trailerMain"));
+leaderAltBtn.addEventListener("click", () => handleClick("Leader (Alt)", "leaderAlt"));
+trailerAltBtn.addEventListener("click", () => handleClick("Trailer (Alt)", "trailerAlt"));
 
 // Open the full options page
 openOptionsLink.addEventListener("click", () => {
