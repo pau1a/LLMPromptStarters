@@ -7,37 +7,32 @@
   "background": {
     "service_worker": "background.js"
   },
-
-  
-"commands": {
-  "inject-leader-main": {
-    "suggested_key": {
-      "default": "Ctrl+8"
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     },
-    "description": "Leader (main)"
+    "default_popup": "popup.html",
+    "default_title": "Text Injector"
   },
-  "inject-trailer-main": {
-    "suggested_key": {
-      "default": "Ctrl+9"
-    },
-    "description": "Trailer (main)"
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
-  "inject-leader-alt": {
-    "suggested_key": {
-      "default": "Ctrl+Shift+8"
+  "commands": {
+    "inject-leader-main": {
+      "description": "Leader (main)"
     },
-    "description": "Leader (alt)"
-  },
-  "inject-trailer-alt": {
-    "suggested_key": {
-      "default": "Ctrl+Shift+9"
+    "inject-trailer-main": {
+      "description": "Trailer (main)"
     },
-    "description": "Trailer (alt)"
+    "inject-leader-alt": {
+      "description": "Leader (alt)"
+    },
+    "inject-trailer-alt": {
+      "description": "Trailer (alt)"
+    }
   }
-}
-
-
-
-
-
 }
