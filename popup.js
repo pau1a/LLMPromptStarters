@@ -1,3 +1,4 @@
+
 // Grab buttons + status line
 const leaderMainBtn   = document.getElementById("btnLeaderMain");
 const trailerMainBtn  = document.getElementById("btnTrailerMain");
@@ -70,7 +71,9 @@ function injectAndNotify(label, text, type) {
           if (type === "leader") {
             nodes.push(document.createTextNode(injectedText));
             nodes.push(document.createElement("br"));
+            nodes.push(document.createElement("br"));
           } else if (type === "trailer") {
+            nodes.push(document.createElement("br"));
             nodes.push(document.createElement("br"));
             nodes.push(document.createTextNode(injectedText));
           } else {
